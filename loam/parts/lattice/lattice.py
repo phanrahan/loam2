@@ -1,5 +1,9 @@
-from magma.compile import write_file
 from loam import FPGA
+
+def write_file(basename, suffix, lines):
+    f = open(basename + "." + suffix, "w")
+    f.write(contents)
+    f.close()
 
 __all__ = ['Lattice']
 

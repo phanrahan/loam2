@@ -1,4 +1,4 @@
-from magma import INPUT, OUTPUT, INOUT, In, Out, Bit
+from magma import In, Out, Bit, Direction
 from loam import Peripheral
 
 class Pin(Peripheral):
@@ -26,14 +26,14 @@ class GPIO(Pin):
         self.Z = False
 
     def input(self):
-        self.direction = INPUT
+        self.direction = Direction.In
         return self
 
     def output(self):
-        self.direction = OUTPUT
+        self.direction = Direction.Out
         return self
 
     def inout(self):
-        self.direction = INOUT
+        self.direction = Direction.InOut
         return self
 

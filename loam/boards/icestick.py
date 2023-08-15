@@ -21,7 +21,7 @@ Differential Input Pairs : 11
 
 class IceStick(Board):
 
-    def __init__(self):
+    def __init__(self, **kwargs):
 
         super(IceStick, self).__init__("IceStick")
 
